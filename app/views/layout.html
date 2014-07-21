@@ -1,0 +1,114 @@
+$def with (page, content, title='Google Modules')
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>$title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Styles -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAE2klEQVRoge2aTW8bVRSGz52MYyduYzexiVNSYtq0JHbbFBAICSk7pC66gAVIsGlFKyF2UdUNZdOmamEBC5C6QuK/8AvYoX7EJm3UpFGaryYh8dwvFpnxnHvnznjcOLUtdTbxeDHzvOe+7znXkyHwx0UJXXxY7QY46PFGQLuPrhdgtxvgVQ+bSLh++ulOVwrIJSncK1c23+nfy3SdgKnMNsyWKtu9lswwQbrLQl+OLu9dKy7aQpIjTBLgsksEJC0BNyfm1z4Z3BzkLnjXCBhJOfDL+ceruV5nyIPmkgATXSDgo2Mva7dLVWYRGGII2lsB1skCrowtrX9z4nmGS5L0wJkExT4dKaCvR8Dd8tzzswM7BQzrfwZgokMz8HZfTfxUnhPDKafAtLAySYALfA6dtQKfDm2ymxPzlk2ErYCLoBAspiMEfFtc5F+fWK6Dm8Kqr0JHWGjAZvDj5Lz4ILPV49sDIMo+ykq0cxKfSu/y2VJF5pPUDgJDwD46eFtX4LO31tiNM08IAQjAcwUQVHjR5hWwiITvTz7jXxxfsU1wUWENrgC83hXIJpi4U67yyaM7Ca+6XKtoPPA2TOLSwA6bLVV5xmZJ3R5xw6qDM0HAeR0WulR4wWfGF4gASIaGtUlwJgk4wgJ6mAISRMLM6af04vBqwrwlwL6HaHB0ToUFjiRAxb6IQxGQT1J2rzxXeze9m268JTCBglEIFRY4LjiVhyTg/ewWu1OqOqkekWbS2g9rSJfBrVEXotgGVdwR6iq0VMBXo8v0u5PPiJCkH1fzIF2GCRdeIngkoiUCkpbgP7w3vzed20jr+5i4YdUrzgWp24RqtqFuB6KyBRYaSdX4r+cfbw0nnSwGixtWHdz7TodXrWO1JsQfH3vJ7pYrNUJkNnpLYKo4BCru+92qV7geWrQKVBy8jcrLY0v/XRlbSnFJ0jq0MawRVjGFtV557Ttaz8IrWqivR7Cfz86tn8ts59WWGAyrcQMWYZ2osFLN+9TNSFMCRvtq/P6FBxtHbZ43hVXZoMUE98Jq6vE6MLYQFVZze6Hp3MburckqSICccTjVgbRdZgPrBDqNuwpRtqHCt1scAXxmfGHl8+MrBa8dhncZHRwiPR8WVjyo9M8eOJUEWKMuNJBg/LepRwvF/r0iHvGtD6u56rqFGLKbd51QAeNHdmv3LzxYS1iyWPc4+iERJ6z6VsET4sjGPR5by6s2lb4I77omAeJS4cXKjTNPMkKSERzGwFQNA9egjWHVKq50F2Qbpvteu6ciwCKS35r89+F0br1k9LohrFHgWGCg0xhtY666B79/LQvdD/2LKZtg9M8P/6kM9rJS4/273h4h0joUAZt7vF511C5dIbgV47ZtAwCcy2yv/j71qAYAE2FhNXeZxp6v20PrOPgcW8gP6n611eoH5459eWzp76vFxTKXxH/+LkJ+r8YE986NYcXA2tDyW6QvRL+f91e4AshfD/MyOFFjhjUEnEkV2MHAyPsUW0ULK9Oujdm86gtJ/AdLJt8zw6OPRmFV4EM6jhdo5XMgrF5gVQYuCQggINw3PIwCzGGFhuDYEmpYw6quguMBha3DtR0AfjtFFRDSZRqBc0l8UDSQTGHFVmkmrNz1vf5qjR33UXYzYVV7PK60Cu6FFQ8o3cpYgOn4H+QGDGkK7oaAAAAAAElFTkSuQmCC" rel="shortcut icon" type="image/x-icon">
+        <link href="https://ns-cdn.neustar.biz/_global/css/bootstrap-ns/ns.css" media="screen" rel="stylesheet" type="text/css">
+        <!-- Scripts -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <!--[if lt IE 9]><script type="text/javascript" src="https://ns-cdn.neustar.biz/_global/js/html5shiv/html5shiv/3.6.2/html5shiv.js"></script><![endif]-->
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="navwrap">
+                <header class="h navbar navbar-inverse navbar-static-top">
+                    <section class="hat">
+                        <div class="container">
+                            <nav class="right row">
+                                <ul class="dropdown col-md-12">
+                                    <li class="call">Call <span class="dynamic_cs_tn"><strong>+1-555-555-5555</strong></span></li>
+                                    <li class="link"><a href="http://hello.neustar.biz/main-request-info.html" target="_blank">Request Info</a></li>
+                                    <li class="link"><a href="http://www.neustar.biz/support">Support</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="../" class="navbar-brand">Bootstrap</a>
+                        </div>
+                        <nav class="collapse navbar-collapse" role="navigation">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#">Login</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+            <div class="contentwrap">
+                <section class="breadcrumbs">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li class="active">Data</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="full intro">
+                    <div class="container">
+                        $content
+                    </div>
+                </section>
+
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <footer class="f">
+            <section class="full lower">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 chat">
+                            <p>+1 (555) 555-5555 | <a class="feedback_trigger" href="#">Feedback</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="social">
+                                <li class="facebook"><a href="https://www.facebook.com/neustarinc" target="_blank">Like us on Facebook</a></li>
+                                <li class="twitter"><a href="http://twitter.com/#!/Neustar" target="_blank">Follow us on Twitter</a></li>
+                                <li class="linkedin"><a href="http://www.linkedin.com/company/neustar-inc" target="_blank">Follow us on LinkedIn</a></li>
+                                <li class="google"><a href="https://plus.google.com/105094231923518333940" target="_blank">Join us on Google+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6 copy">
+                            <p>Copyright ©2014 Neustar, Inc. All Rights Reserved</p>
+                        </div>
+                        <div class="col-md-6 links">
+                            <ul>
+                                <li><a href="http://www.neustar.biz/privacy" target="_blank">Privacy</a></li>
+                                <li><a href="http://www.neustar.biz/legal" target="_blank">Legal</a></li>
+                                <li><a href="http://www.neustar.biz/support" target="_blank">Support</a></li>
+                                <li><a href="http://www.neustar.biz/about-us/neutrality" target="_blank">Neutrality</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+        </footer>
+    </body>
+</html>
