@@ -13,7 +13,7 @@ from addons import custom_errors
 urls = (
     # front page
     '/', 'app.controllers.home.index',
-    '/hello/(.*)', 'app.controllers.hello.index',
+    '/hello/', 'app.controllers.hello.index',
 )
 
 app = web.application(urls, globals())

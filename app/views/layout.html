@@ -1,4 +1,4 @@
-$def with (page, content, title='Google Modules')
+$def with (page, content, title='Neustar Bootstrap')
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -44,7 +44,9 @@ $def with (page, content, title='Google Modules')
                                 <li>
                                     <a href="/">Home</a>
                                 </li>
-
+                                <li>
+                                    <a href="/hello/">Hello</a>
+                                </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
@@ -59,20 +61,16 @@ $def with (page, content, title='Google Modules')
                 <section class="breadcrumbs">
                     <div class="container">
                         <ol class="breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Library</a></li>
-                            <li class="active">Data</li>
+                            <li><a href="/">Home</a></li>
                         </ol>
                     </div>
                 </section>
 
                 <section class="full intro">
                     <div class="container">
-                        $content
+                        $:content
                     </div>
                 </section>
-
-
             </div>
             <div class="clearfix"></div>
         </div>
