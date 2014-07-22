@@ -2,9 +2,10 @@
 # Author: Will Hattingh
 
 
-import web
-import config
 import os
+
+import web
+
 import app.controllers
 
 
@@ -23,6 +24,6 @@ else:
     app = web.application(urls, globals())
 
     current_dir = os.path.dirname(__file__)
-    session = web.session.Session(app, web.session.DiskStore(os.path.join(current_dir,'sessions')),)
+    session = web.session.Session(app, web.session.DiskStore(os.path.join(current_dir, 'sessions')), )
 
     application = app.wsgifunc()

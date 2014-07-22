@@ -1,5 +1,6 @@
-import web
 import os
+
+import web
 
 
 base_dir = os.path.abspath(os.path.dirname(__file__))
@@ -13,11 +14,14 @@ cache = False
 # in production the internal errors are emailed to us
 web.config.email_errors = ''
 
+
 def get_cache_config():
     return cache
 
+
 def get_globals():
     return globals
+
 
 def get_base_dir():
     return base_dir
