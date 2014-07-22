@@ -7,8 +7,6 @@ import config
 import os
 import app.controllers
 
-from addons import custom_errors
-
 
 urls = (
     # front page
@@ -17,7 +15,6 @@ urls = (
 )
 
 app = web.application(urls, globals())
-custom_errors.add(app)
 
 if __name__ == "__main__":
     app = web.application(urls, globals())
@@ -25,7 +22,7 @@ if __name__ == "__main__":
 else:
     app = web.application(urls, globals())
 
-    curdir = os.path.dirname(__file__)
-    session = web.session.Session(app, web.session.DiskStore(os.path.join(curdir,'sessions')),)
+    current_dir = os.path.dirname(__file__)
+    session = web.session.Session(app, web.session.DiskStore(os.path.join(current_dir,'sessions')),)
 
     application = app.wsgifunc()
