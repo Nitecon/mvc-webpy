@@ -5,4 +5,4 @@ import app
 
 class index:
     def GET(self):
-        return app.layout("Neustar Bootstrap - Hello", app.view.hello(__name__))
+        return app.layout(app.view.hello(__name__), "Neustar Bootstrap - Hello")

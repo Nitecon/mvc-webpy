@@ -5,6 +5,8 @@ import web
 
 base_dir = os.path.abspath(os.path.dirname(__file__))
 
+global_template_path = base_dir + "/extra/templates"
+
 # in development debug error messages and reloader
 web.config.debug = True
 
